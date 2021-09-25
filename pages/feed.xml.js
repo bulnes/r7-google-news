@@ -1,6 +1,6 @@
-import { SECTION_ID } from "./configs/section-id"
-import setNewsSitemapRes from "./helpers/set-news-sitemap-res"
-import getMediasData from "./services/get-medias-data"
+import { SECTION_ID } from "../configs/section-id"
+import setNewsSitemapRes from "../helpers/set-news-sitemap-res"
+import getMediasData from "../services/get-medias-data"
 
 export default function FeedXML() {}
 

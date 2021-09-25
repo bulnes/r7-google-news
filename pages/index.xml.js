@@ -1,4 +1,4 @@
-import { SECTION_ID } from "./configs/section-id"
+import { SECTION_ID } from "../configs/section-id"
 
 export default function HomeXML() {}
 
