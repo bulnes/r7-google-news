@@ -1,9 +1,10 @@
+import { BASE_URL } from "../configs/base-url"
 import { SECTION_ID } from "../configs/section-id"
 
 export default function HomeXML() {}
 
-export async function getServerSideProps({ resolvedUrl, res }) {
-  const originReq = `${resolvedUrl}`.replace('/index.xml', '')
+export async function getServerSideProps({ res }) {
+  const originReq = BASE_URL
 
   const sitemapIds = Object.keys(SECTION_ID).map((id) => id.toLowerCase())
   const feedsItems = sitemapIds.map((id) => `${originReq}/feed.xml?type=${id}`)
